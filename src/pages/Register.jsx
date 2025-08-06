@@ -71,12 +71,12 @@ const Register = () => {
             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#077A7D] transition"
           />
 
-          <button
-            onClick={handleRegister}
-            className="w-full bg-[#077A7D] hover:bg-[#065f60] text-white py-3 rounded-lg font-semibold transition duration-300"
+          <Link
+            to="/register"
+            className="w-full block text-center bg-[#077A7D] hover:bg-[#065f60] text-white py-3 rounded-lg font-semibold transition duration-300"
           >
             Register
-          </button>
+          </Link>
 
           <p className="text-sm text-center text-gray-600 mt-4">
             Already have an account?{" "}

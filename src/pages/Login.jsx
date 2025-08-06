@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { getUsers, setLoggedInUser } from "../utils/storage";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +16,7 @@ const Login = () => {
       setLoggedInUser(email);
       navigate("/dashboard");
     } else {
-      alert("Invalid credentials");
+      alert("Invalid credentials / Register first");
     }
   };
 
@@ -61,12 +61,12 @@ const Login = () => {
 
         <p className="text-center text-sm text-gray-600">
           Don’t have an account?{" "}
-          <a
-            href="/register"
+          <Link
+            to="/register"
             className="text-[#077A7D] font-medium hover:underline"
           >
             Register here
-          </a>
+          </Link>
         </p>
       </div>
     </div>
