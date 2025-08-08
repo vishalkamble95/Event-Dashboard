@@ -1,5 +1,3 @@
-// src/utils/storage.js
-
 // Save users to localStorage
 export const saveUsers = (users) => {
   localStorage.setItem("users", JSON.stringify(users));

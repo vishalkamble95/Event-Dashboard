@@ -13,7 +13,7 @@ const Register = () => {
   };
 
   const validatePassword = (password) => {
-    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/.test(password);
+    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$/.test(password);
   };
 
   const handleRegister = () => {
