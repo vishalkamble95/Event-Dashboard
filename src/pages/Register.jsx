@@ -26,7 +26,7 @@ const Register = () => {
 
     if (!validatePassword(password)) {
       setError(
-        "Password must be at least 6 characters, contain one uppercase letter, one lowercase letter, and one number."
+        "Password must be at least 6 characters, contain one uppercase letter, one lowercase letter, one number, and one special character."
       );
       return;
     }
